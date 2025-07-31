@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neuroscience Fact Generator</title>
+  <style>
+    body { font-family: Arial; background:black; color:white; text-align:center; margin-top:100px; }
+    button { padding:10px 20px; background:green; color:white; border:none; border-radius:5px; }
+  </style>
+</head>
+<body>
+  <h1>?? Neuroscience Fact Generator</h1>
+  <div id="fact">Click the button to learn a new fact about the brain!</div>
+  <button onclick="newFact()">New Fact</button>
+<script>
+const facts = [
+"Your brain uses about 20% of your body’s energy, even though it makes up only 2% of your weight.",
+"Neurons send signals at up to 120 meters per second.",
+"Your brain has around 86 billion neurons.",
+"Sleep helps the brain consolidate memories.",
+"The hippocampus is key for forming new memories."
+];
+function newFact() {
+  const randomIndex = Math.floor(Math.random() * facts.length);
+  document.getElementById('fact').textContent = facts[randomIndex];
+}
+</script>
+</body>
+</html>
