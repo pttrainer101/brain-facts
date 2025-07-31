@@ -1,87 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neuroscience Facts</title>
-  <style>
-    body {
-      background-color: #111;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      margin: 0;
-    }
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #4CAF50;
-      border: none;
-      color: white;
-      font-size: 18px;
-      cursor: pointer;
-      border-radius: 8px;
-    }
-    button:hover {
-      background: #45a049;
-    }
-    .fact-box {
-      max-width: 600px;
-      font-size: 22px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div class="fact-box" id="fact">Loading a neuroscience fact...</div>
-  <button onclick="newFact()">?? New Fact</button>
-
-  <script>
-    const facts = [
-      "Your brain uses about 20% of your body's total energy.",
-      "The human brain contains around 86 billion neurons.",
-      "Neurons can fire up to 1,000 times per second.",
-      "The brain has no pain receptors — brain surgery can be done on awake patients.",
-      "Your brain produces enough electricity to power a small light bulb.",
-      "The hippocampus is critical for memory formation.",
-      "Exercise stimulates the growth of new neurons (neurogenesis).",
-      "Your prefrontal cortex handles decision-making and self-control.",
-      "Chronic stress can shrink the hippocampus.",
-      "The cerebellum manages balance and coordination.",
-      "Your brain weighs around 3 pounds.",
-      "The brain is about 73% water.",
-      "Dopamine is a key chemical for motivation and reward.",
-      "Your brain processes images much faster than text.",
-      "Sleep clears toxins from your brain.",
-      "The left brain controls the right side of your body.",
-      "Meditation can increase gray matter in the brain.",
-      "Caffeine keeps you alert by blocking adenosine receptors.",
-      "Your brain generates about 50,000 thoughts per day.",
-      "Listening to music activates almost every part of your brain.",
-      "Neuroplasticity means your brain can rewire itself throughout life.",
-      "Your brain’s synapses change constantly as you learn.",
-      "The brain’s reward system lights up when you get social approval.",
-      "Learning new skills strengthens brain connections.",
-      "The human brain is more active at night than during the day.",
-      "Omega-3 fatty acids are crucial for healthy brain function.",
-      "Your brain can survive only 4–6 minutes without oxygen before damage begins.",
-      "Smelling something can instantly trigger memories.",
-      "The brain can store roughly 2.5 million gigabytes of information.",
-      "Laughter activates several brain regions, improving mood."
-    ];
-
-    function newFact() {
-      const randomIndex = Math.floor(Math.random() * facts.length);
-      document.getElementById("fact").innerText = facts[randomIndex];
-    }
-
-    newFact();
-  </script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Neuroscience Facts</title><style>body{background:#111;color:#fff;font-family:Arial,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;text-align:center;margin:0;padding:20px;}button{margin-top:20px;padding:10px 20px;background:#4CAF50;border:none;color:#fff;font-size:18px;cursor:pointer;border-radius:8px;}button:hover{background:#45a049;}.fact-box{max-width:600px;font-size:20px;line-height:1.5;}</style></head><body><div class="fact-box" id="fact">Loading fact...</div><button onclick="newFact()">?? New Fact</button><script>const facts=[
+"Your brain uses about 20% of your body’s energy even though it’s only ~2% of the body weight.",
+"Humans have about 86 billion neurons.",
+"Neurons can fire up to 1,000 times per second.",
+"The hippocampus plays a key role in forming new memories.",
+"The brain has no pain receptors—brain surgery can be done while patient is awake.",
+"During REM sleep your brain is almost as active as when you're awake.",
+"Exercise promotes neurogenesis, the growth of new neurons.",
+"Neuroplasticity allows the brain to rewire throughout life.",
+"The prefrontal cortex governs planning, decision-making, and impulse control.",
+"Chronic stress may shrink parts of the brain like the hippocampus.",
+"The cerebellum coordinates movement, balance and motor learning.",
+"Your brain’s white matter connects different brain areas.",
+"The adult human brain weighs about 3 pounds.",
+"Caffeine blocks adenosine receptors to help you feel more awake.",
+"Sleep clears waste from your brain via the glymphatic system.",
+"The amygdala processes strong emotions like fear.",
+"Laughter activates multiple brain regions improving mood.",
+"Oxygen deprivation longer than 4–6 minutes can cause brain damage.",
+"Cortisol, the stress hormone, can damage neurons when elevated chronically.",
+"Mirror neurons fire both when you act and when you see others act.",
+"The vagus nerve connects brain to major organs like the heart.",
+"Music activates almost every part of the brain.",
+"It's estimated the brain generates 50,000 thoughts a day.",
+"The brain’s synapses rewire constantly with new learning.",
+"Memories are distributed across multiple brain regions.",
+"Children’s brains have more synapses than adults (pruning refines them).",
+"Brain gray matter density can increase with meditation practice.",
+"Your brain uses more energy when awake than during sleep.",
+"The thalamus relays sensory information to the cortex.",
+"The default mode network is active when daydreaming.",
+"The brain processes visual images around 60,000x faster than text.",
+"Brain cells called astrocytes support neurons’ health.",
+"Humans are born with nearly all the brain cells they will ever have.",
+"The brain’s chemical dopamine influences motivation and reward.",
+"Oxytocin aids bonding and social trust.",
+"Neurogenesis persists in the hippocampus into adulthood.",
+"Sleep is critical for memory consolidation.",
+"Heavy alcohol use can reduce brain volume over time.",
+"The left hemisphere controls the right side of the body.",
+"The right hemisphere controls spatial awareness and face recognition.",
+"Broca’s area helps with speech production.",
+"Wernicke’s area helps with language comprehension.",
+"Neurons communicate electrically and chemically.",
+"The brain visual cortex is located at the back of your head.",
+"Myelin sheaths speed up signal transmission between neurons.",
+"The corpus callosum connects the brain’s two hemispheres.",
+"Synaptic pruning removes unused synapses during development.",
+"Learning strengthens synapses through long-term potentiation.",
+"Glial cells outnumber neurons by about 10 to 1.",
+"Neurotransmitter serotonin affects mood and emotion.",
+"Bilingual brains often show increased gray matter.",
+"Action potentials travel faster in myelinated neurons.",
+"Brain volume shrinks 0.2% per year after age 30.",
+"Your brain consumes about 20 watts of power.",
+"Endorphins reduce pain and boost pleasure.",
+"Brains form more connections during adolescence.",
+"Short naps can enhance alertness and memory.",
+"Some neurons live an entire lifetime.",
+"Alzheimer’s disease involves beta-amyloid protein buildup.",
+"Dysfunction of dopamine pathways is linked to Parkinson’s disease.",
+"Psychological stress affects the immune system via brain pathways.",
+"The basal ganglia are involved in movement and reward.",
+"Brain’s reward system reinforces addictive behaviors.",
+"Your brain contains about 100,000 miles of blood vessels.",
+"The retina is actually part of the brain.",
+"Olfactory receptors connect directly to brain’s memory centers.",
+"Your brain’s language centers can reorganize after injury.",
+"Cognitive decline can be slowed by mental stimulation.",
+"The brain’s hippocampus shrinks in depression.",
+"Social interaction boosts brain health.",
+"The suprachiasmatic nucleus regulates circadian rhythms.",
+"The brain uses 20% of your oxygen supply at rest.",
+"High blood pressure can damage blood–brain barriers.",
+"The default mode network consumes high energy at rest.",
+"Neurons are separated by gaps called synapses.",
+"Astrocytes help maintain chemical balance around neurons.",
+"Long-term potentiation underlies learning and memory.",
+"Pain localization is processed in the somatosensory cortex.",
+"The brain processes smells faster than other senses.",
+"The hypothalamus regulates hunger and hormones.",
+"Neural stem cells exist even in adult brain.",
+"Brain tumors may arise from glial cells.",
+"Autism spectrum involves atypical neural connectivity.",
+"PTSD alters amygdala and hippocampus structure.",
+"Rapid eye movement sleep supports emotional processing.",
+"Fetal brain development starts 3 weeks after conception.",
+"Grey matter is rich in neuronal cell bodies.",
+"White matter consists of axon fibers coated by myelin.",
+"Dopaminergic neurons degenerate in Parkinson’s disease.",
+"Cognitive reserve helps buffer against brain aging.",
+"The brain can reassign functions after injury.",
+"Circadian rhythms influence sleep-wake cycles.",
+"Brain damage can trigger neurogenesis in some areas.",
+"Lewy bodies impair brain function in dementia.",
+"HDL health supports brain blood vessels.",
+"Endocannabinoid system influences memory and appetite.",
+"Sleep spindles occur during stage 2 sleep.",
+"Amygdala activation helps detect threats.",
+"Parkinson’s disease stems from the loss of dopamine neurons.",
+"Spatial memory relies on hippocampal circuits.",
+"Brain plasticity decreases with age but remains lifelong.",
+"Functional MRI maps active regions in live brains.",
+"Visual cortex damage causes cortical blindness.",
+"Neurotransmitter acetylcholine supports attention.",
+"The brain’s gustatory cortex processes taste.",
+"Fear memories involve the amygdala.",
+"Hemispheric specialization varies among individuals.",
+"Hippocampal atrophy occurs in chronic stress.",
+"White matter integrity declines with age.",
+"Brain matter takes days to repair after traumatic injury.",
+"Memory consolidation occurs during deep sleep.",
+"The brain’s precuneus region supports self-awareness.",
+"Auditory cortex processes sound patterns.",
+"Emotion regulation involves prefrontal cortex control.",
+"Decision-making uses networks across multiple lobes.",
+"Synaptic density changes throughout life stages.",
+"Brainstem controls basic life functions like breathing.",
+"Mirror therapy can help retrain stroke-damaged brains.",
+"Prenatal stress affects fetal brain development.",
+"The corpus callosum thickens during adolescence.",
+"Hebb’s rule: neurons that fire together wire together.",
+"Brain connectivity increases during childhood.",
+"Glutamate is the brain’s main excitatory neurotransmitter.",
+"GABA is the main inhibitory neurotransmitter.",
+"Sleep deprivation impairs attention and memory.",
+"Long-term meditation alters gray matter volume.",
+"The brain’s vestibular system controls balance.",
+"White matter lesions are risk factors in aging brains.",
+"The substantia nigra degenerates in Parkinson’s.",
+"Social isolation negatively impacts brain health."
+];
+function newFact(){document.getElementById('fact').innerText=facts[Math.floor(Math.random()*facts.length)];}
+newFact();
+</script></body></html>
