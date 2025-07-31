@@ -3,28 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neuroscience Fact Generator</title>
+  <title>Neuroscience Facts</title>
   <style>
-    body { font-family: Arial; background:black; color:white; text-align:center; margin-top:100px; }
-    button { padding:10px 20px; background:green; color:white; border:none; border-radius:5px; }
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      margin: 0;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .fact-box {
+      max-width: 600px;
+      font-size: 22px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
-  <h1>?? Neuroscience Fact Generator</h1>
-  <div id="fact">Click the button to learn a new fact about the brain!</div>
-  <button onclick="newFact()">New Fact</button>
-<script>
-const facts = [
-"Your brain uses about 20% of your body’s energy, even though it makes up only 2% of your weight.",
-"Neurons send signals at up to 120 meters per second.",
-"Your brain has around 86 billion neurons.",
-"Sleep helps the brain consolidate memories.",
-"The hippocampus is key for forming new memories."
-];
-function newFact() {
-  const randomIndex = Math.floor(Math.random() * facts.length);
-  document.getElementById('fact').textContent = facts[randomIndex];
-}
-</script>
+  <div class="fact-box" id="fact">Loading a neuroscience fact...</div>
+  <button onclick="newFact()">?? New Fact</button>
+
+  <script>
+    const facts = [
+      "Your brain uses about 20% of your body's total energy.",
+      "The human brain contains around 86 billion neurons.",
+      "Neurons can fire up to 1,000 times per second.",
+      "The brain has no pain receptors — brain surgery can be done on awake patients.",
+      "Your brain produces enough electricity to power a small light bulb.",
+      "The hippocampus is critical for memory formation.",
+      "Exercise stimulates the growth of new neurons (neurogenesis).",
+      "Your prefrontal cortex handles decision-making and self-control.",
+      "Chronic stress can shrink the hippocampus.",
+      "The cerebellum manages balance and coordination.",
+      "Your brain weighs around 3 pounds.",
+      "The brain is about 73% water.",
+      "Dopamine is a key chemical for motivation and reward.",
+      "Your brain processes images much faster than text.",
+      "Sleep clears toxins from your brain.",
+      "The left brain controls the right side of your body.",
+      "Meditation can increase gray matter in the brain.",
+      "Caffeine keeps you alert by blocking adenosine receptors.",
+      "Your brain generates about 50,000 thoughts per day.",
+      "Listening to music activates almost every part of your brain.",
+      "Neuroplasticity means your brain can rewire itself throughout life.",
+      "Your brain’s synapses change constantly as you learn.",
+      "The brain’s reward system lights up when you get social approval.",
+      "Learning new skills strengthens brain connections.",
+      "The human brain is more active at night than during the day.",
+      "Omega-3 fatty acids are crucial for healthy brain function.",
+      "Your brain can survive only 4–6 minutes without oxygen before damage begins.",
+      "Smelling something can instantly trigger memories.",
+      "The brain can store roughly 2.5 million gigabytes of information.",
+      "Laughter activates several brain regions, improving mood."
+    ];
+
+    function newFact() {
+      const randomIndex = Math.floor(Math.random() * facts.length);
+      document.getElementById("fact").innerText = facts[randomIndex];
+    }
+
+    newFact();
+  </script>
 </body>
 </html>
